@@ -14,3 +14,7 @@ body {
   align-items: center;
   justify-content
 }
+
+canvas {
+    border: 2px solid steelblue;
+}  
