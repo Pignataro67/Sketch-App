@@ -31,4 +31,9 @@ canvas {
   background-color: #fff;
   border: none;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
 }  
