@@ -7,4 +7,6 @@ const clearEl = document.getElementById('clear');
 
 let isPressed = false
 colorEl.value = 'black'
-let color
+let color = colorEl.value
+let x
+let y
