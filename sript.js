@@ -19,3 +19,10 @@ canvas.addEventListener('mousedown', (e) => {
   x = e.offsetX
   y = e.offsetY
 })
+
+document.addEventListener('mouseup', (e) => {
+    isPressed = false
+
+    x = undefined
+    y = undefined
+})
