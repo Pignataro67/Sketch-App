@@ -33,3 +33,7 @@ function drawCircle(x, y) {
     ctx.fillStyle = color
     ctx.fill()
 }
+
+function updateSizeOnScreen() {
+    sizeEL.innerText = size
+}
