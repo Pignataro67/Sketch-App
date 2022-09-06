@@ -26,3 +26,10 @@ document.addEventListener('mouseup', (e) => {
     x = undefined
     y = undefined
 })
+
+function drawCircle(x, y) {
+    ctx.beginPath();
+    ctx.arc(x, y, size, 0, Math.PI * 2)
+    ctx.fillStyle = color
+    ctx.fill()
+}
