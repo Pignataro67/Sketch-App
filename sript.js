@@ -28,7 +28,6 @@ document.addEventListener('mouseup', (e) => {
   y = undefined
 })
 
-
 canvas.addEventListener('mousemove', (e) => {
   if(isPressed) {
     const x2 = e.offsetX
@@ -38,8 +37,7 @@ canvas.addEventListener('mousemove', (e) => {
     drawLine(x, y, x2, y2)
 
     x = x2
-    y = y2
-     
+    y = y2   
   }
 })
 
@@ -53,3 +51,7 @@ function drawCircle(x, y) {
 function updateSizeOnScreen() {
     sizeEL.innerText = size
 }
+
+colorEl.addEventListener('change', (e) => color = e.target.value)
+
+clearEl.addEventListener('click', () => ctx.clearRect(0,0, canvas.width, canvas.height))
