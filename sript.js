@@ -7,6 +7,7 @@ const clearEl = document.getElementById('clear');
 
 const ctx = canvas.getContext('2d');
 
+let size = 10
 let isPressed = false
 colorEl.value = 'black'
 let color = colorEl.value
@@ -21,20 +22,25 @@ canvas.addEventListener('mousedown', (e) => {
 })
 
 document.addEventListener('mouseup', (e) => {
-    isPressed = false
+  isPressed = false
 
-    x = undefined
-    y = undefined
+  x = undefined
+  y = undefined
 })
 
 
 canvas.addEventListener('mousemove', (e) => {
-    if(isPressed) {
-        const x2 = e.offsetX
-        const y2 = e.offsetY
+  if(isPressed) {
+    const x2 = e.offsetX
+    const y2 = e.offsetY
+       
+    drawCircle(x2, y2)
+    drawLine(x, y, x2, y2)
 
+    x = x2
+    y = y2
      
-    }
+  }
 })
 
 function drawCircle(x, y) {
